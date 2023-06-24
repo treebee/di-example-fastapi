@@ -1,0 +1,13 @@
+services:
+  web:
+    environment:
+      - POSTGRES_URL=postgresql://postgres:postgres@postgres:5432/di_example
+      - STORAGE_BACKEND=postgres
+    depends_on:
+      - postgres
+  postgres:
+    image: "postgres:15"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=di_example
