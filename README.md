@@ -2,6 +2,8 @@
 
 ## Karlsruhe Python Meetup 2023-07-12
 
+Slides of the talk can be found here: https://github.com/solute/presentations
+
 Simple FastAPI app showcasing dependency injection.
 
 Implements 3 services that can be plugged into the available view functions,
